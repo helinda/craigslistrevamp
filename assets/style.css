@@ -1,0 +1,394 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Utility Stylesheets */
+a, a:link, a:visited {
+color: #000;
+text-decoration: none;
+}
+a:hover {
+	color: #496fda;
+}
+.clear {
+clear: both;
+}
+.img-scaled {
+width: 100%;
+}
+
+img {
+	border: 0;
+}
+
+#loginbar {	
+	position: absolute;
+	width: 100%;
+	background-color: #3b4046;
+	text-align: left;
+	height: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size:12px;
+	color: #ebeced;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#loginbar a, #loginbar a:link, #loginbar a:visited {
+	color: #ebeced;	
+	text-decoration: none;
+}
+#loginbar a:hover {
+	color: #ffffff;
+}
+
+
+#loginitemswrapper {
+	float:right;	
+}
+
+.loginitem {
+	display: inline;
+	width: 60px;
+	float:left;
+}
+
+
+/* Navigation Bar */
+#navbar {
+    top: 0px;
+    position: absolute;
+    background: #ebeced;
+    color: white;
+    width: 100%;
+}
+#navbar-content {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0px 13px 0px;
+}
+#navbar-contentcontainer {
+    padding-top: 36px;
+}
+#cl-logo {
+    float: left;
+    font-size: 15px;
+    font-weight: 700;
+}
+#cl-logo img {
+	height: 50px;
+	margin-left: -145px;
+}
+.nav-item {
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+/* Navigation Bar */
+/*#navbar {
+    position: absolute;
+    top: 0px;
+    background: #ebeced;
+    color: white;
+    width: 100%;
+
+}
+#navbar-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px 10px 20px;
+}
+#cl-logo {
+    float: left;
+    font-size: 15px;
+    font-weight: 700;
+}
+#cl-logo img {
+	height: 50px;
+	margin-left: 0px;
+}
+.nav-item {
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+#nav-actions {
+	float: right;
+	margin-top: 13px;
+}*/
+
+/* Search Bar (from textfixer.com) */
+#tfnewsearch{
+    margin-top: 7px;
+    margin-left: 14px;
+}
+.tftextinput{
+	margin: 0;
+	padding: 5px 15px;
+	width: 500px;
+	height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-style: italic;
+    color: #939393;
+	border: none;
+	border-radius: 5px 5px;
+}
+.tfbutton {
+	margin-left: 25px;
+	padding: 4px 50px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: none;
+	background: #e38a39;
+	border-radius: 5px 5px;
+}
+.tfbutton:hover {
+	text-decoration: none;
+	background: #d27420;
+}
+.tfbutton::-moz-focus-inner {
+	border: 0; /* Fixes submit button height problem in Firefox */
+}
+
+
+/* Item-View: General */
+#content {
+    padding-top: 60px;
+}
+#container {
+    background: #fff;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    padding: 30px 0px;
+    margin-top: 40px;
+}
+.post-title {
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 0px 0px 10px;
+}
+.post-subtitle {
+	font-size: 12px;
+	font-weight: 300;
+	color: #939393;
+	padding: 0px 0px 0px 10px;
+}
+#warning {
+	background: #eeeeee;
+	border: 1px solid #939393;
+	margin: 40px 40px;
+	padding: 15px 5px;
+	text-align: center;
+}
+
+/* Item-View: Left Column */
+#left-column {
+	float: left;
+	width: 600px;
+	padding: 10px;
+}
+#left-column img {
+	max-width: 600px;
+	margin-bottom: 20px;
+}
+.post-desc {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Item-View: Right Column */
+#right-column {
+	float: right;
+	width: 300px;
+	padding: 10px;
+}
+#right-column img {
+	max-width: 300px;
+}
+.post-map {
+	margin-bottom: 30px;
+}
+.post-contact {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+.post-contacta {
+	color: #fff;
+	background: #e38a39;
+	width: 110px;
+	border-radius: 10px 10px;
+	padding: 18px 45px;
+	text-align: center;
+}
+.post-contact a, .post-contact a:link, .post-contact a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.post-contacta:hover {
+	background: #d27420;
+}
+.post-nonos {
+	font-size: 12px;
+	font-weight: 300;
+	color: #939393;
+}
+
+
+/* List View Side Content */
+
+#sidenav {
+	position: absolute;
+    width: 300px;
+    height: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+#sidenavcontent {
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.sidenavheader {
+	background: #ebeced;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 5px;
+}
+
+.sidenavitem {
+	text-align: center;
+	padding: 3px 25px 3px 25px;
+
+}
+
+.priceinput {
+	display: inline-block;
+	margin-bottom: 0px;
+}
+
+.inputbox {
+	padding: 5px;
+	width: 80px;
+	height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+    color: #939393;
+	border: 1px solid #CCC;
+}
+
+/* Box Item Content */
+#item-content {
+	position: relative;
+	margin-top: 140px;
+	margin-left: 350px;
+	height: 200%;
+
+}
+
+.item-box {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	width: 250px;
+	height: 320px;
+	border: 1px solid #CCC;
+}
+
+.item-box:hover {
+	background: #ebeced;
+}
+.item-image {
+	width: 270px;
+	height: 200px;
+}
+
+.item-image img{
+	max-width: 250px;
+	height: 180px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item-text {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	padding: 5px;
+
+}
+
+.item-title {
+	height: 29px;
+	font-weight: 300;
+	font-size: 18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.item-hr {
+	border-bottom: 1px solid #DDD;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.item-price {
+	font-weight: 400;
+	font-size: 22px;
+}
+
+.item-info {
+	font-size: 12px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #939393;
+}
+
+/* Footer */
+#footer {
+	position: relative;
+	bottom: 0px;
+	background: #ebeced;
+	font-size: 12px;
+	color: #939393;
+	text-align: center;
+	padding: 10px 0px;
+}
+.foo-item {
+	display: inline;
+	margin: 0px 16px;
+}
+#footer a, #footer a:link, #footer a:visited {
+	color: #939393;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #000;
+}

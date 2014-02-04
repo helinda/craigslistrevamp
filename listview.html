@@ -1,0 +1,248 @@
+<html>
+<head>
+<title>Craigslist - List View</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){ 
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventLi stener("click", function() {
+			if (submitbutton.value == 'What are you looking for?'){
+				submitbutton.value = '';
+			}
+		});
+	}
+}
+</script>
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<!--<div id="navbar">
+		<div id="navbar-content">
+			<div id="cl-logo">
+				<a href=""><img src="assets/images/craigslist-logotype.jpg"></a>
+			</div>
+			<div id="nav">
+				<div class="nav-item">
+					<form id="tfnewsearch" method="get" action="/search">
+		        		<input type="text" id="tfq" class="tftextinput" name="q" size="21" maxlength="120" value="What are you looking for?"><input type="submit" value="search" class="tfbutton">
+					</form>
+				</div>
+				<div id="nav-actions">
+					<a href="">Login</a> | <a href="">Sign Up</a>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<div id="navbar">
+		<div id="loginbar">
+			<div id="loginitemswrapper">
+				<div class="loginitem"><a href="#">log-in</a></div>
+				<div class="loginitem"><a href="#">register</a></div>
+			</div>
+		</div>
+		<div id="navbar-contentcontainer">
+		<div id="navbar-content">
+			<div id="cl-logo">
+				<a href=""><img src="assets/craigslist-logotype.jpg"></a>
+			</div>
+			<div id="nav">
+				<div class="nav-item">
+					<form id="tfnewsearch" method="get" action="/search">
+		        		<input type="text" id="tfq" class="tftextinput" name="q" size="21" maxlength="120" value="What are you looking for?"><input type="submit" value="search" class="tfbutton">
+					</form>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		</div>
+	</div>
+		
+
+
+	<!-- List View -->
+	<div id="containter">
+	<!-- Catergory Side Navigation -->
+			<div id="sidenav">
+				<div id="sidenavcontent">
+					<div class="sidenavheader">
+					Sort By
+					</div>
+					 	<a href=""><div class="sidenavitem">
+						most recent
+						</div></a>
+						<a href=""><div class="sidenavitem">
+						best match</div></a>	
+						<a href=""><div class="sidenavitem">
+						low price</div></a>	
+						<a href=""><div class="sidenavitem">
+						high price</div></a>				
+				</div>
+
+				<div id="sidenavcontent">
+					<div class="sidenavheader">
+					Price Range	
+					</div>	
+					 	<div class="sidenavitem">
+					 	Price Min: <form class="priceinput" action="" method="GET">$<input type="text" class="inputbox" placeholder="0">
+						</form>
+						</div>
+						<div class="sidenavitem">
+					 	Price Max: <form class="priceinput" action="" method="GET">$<input type="text" class="inputbox" placeholder="100">
+						</form>
+						</div>						
+				</div>
+
+				<div id="sidenavcontent">
+					<div class="sidenavheader">
+					Location
+					</div>
+						<a href=""><div class="sidenavitem">
+						All SF Bay Area</div></a>
+						<a href=""><div class="sidenavitem">
+						San Francisco</div></a>
+						<a href=""><div class="sidenavitem">
+						South Bay</div></a>
+						<a href=""><div class="sidenavitem">
+						East Bay</div></a>
+						<a href=""><div class="sidenavitem">
+						Peninsula</div></a>
+						<a href=""><div class="sidenavitem">
+						North Bay</div></a>
+						<a href=""><div class="sidenavitem">
+						Santa Cruz</div></a>
+				</div>
+			</div>
+
+
+			<!-- Item Content -->
+<div id="item-content">
+			<a href="">
+				<div class="item-box">
+					<div class="item-image">
+					<img src="assets/images/puppy1.jpg" /></div>
+					<div class="item-text">
+						<div class="item-title">
+					Yorkies (Yorkshire Terrier Puppies) ACA 1 Female700.00, 1 male. 750</div>
+							<div class="item-hr"></div>
+								<div class="item-price">$750</div>
+									<div class="item-info">
+									general - by owner</div>
+					</div></div></a>
+
+			<a href="">
+				<div class="item-box">
+					<div class="item-image">
+					<img src="assets/images/puppy2.jpg"></div>
+					<div class="item-text">
+						<div class="item-title">
+					1 Bluenose Pitbull For Your Loving Home</div>
+							<div class="item-hr"></div>
+								<div class="item-price">$150</div>
+									<div class="item-info">
+									(excelsior/ outer mission) general - by owner</div>
+					</div></div></a>
+
+			<a href="">
+				<div class="item-box">
+					<div class="item-image">
+					<img src="assets/images/puppy3.jpg" /></div>
+					<div class="item-text">
+						<div class="item-title">
+					***JACK RUSSELS MIXED PUPPIES***</div>
+							<div class="item-hr"></div>
+								<div class="item-price">$200</div>
+									<div class="item-info">
+									(san jose west) general - by owner</div>
+					</div></div></a>
+
+			<a href="">
+				<div class="item-box">
+					<div class="item-image">
+					<img src="assets/images/puppy4.jpg" /></div>
+					<div class="item-text">
+						<div class="item-title">
+					[Heelers] ranch puppies 3 available for sale</div>
+							<div class="item-hr"></div>
+								<div class="item-price">$65</div>
+									<div class="item-info">
+									(vallejo / benicia) general - by owner</div>
+					</div></div></a>					
+
+			<a href="">
+				<div class="item-box">
+					<div class="item-image">
+					<img src="assets/images/puppy5.jpg" /></div>
+					<div class="item-text">
+						<div class="item-title">
+					Welsh Pembroke Corgi</div>
+							<div class="item-hr"></div>
+								<div class="item-price">$499</div>
+									<div class="item-info">
+									(East Bay) general - by owner</div>
+					</div></div></a>
+
+			<a href="">
+				<div class="item-box">
+					<div class="item-image">
+					<img src="assets/images/puppy6.jpg" /></div>
+					<div class="item-text">
+						<div class="item-title">
+					sevenden puppies german chepherds</div>
+							<div class="item-hr"></div>
+								<div class="item-price">$400</div>
+									<div class="item-info">
+									(richmond / point / annex) general - by owner</div>
+					</div></div></a>
+
+			<a href="">
+				<div class="item-box">
+					<div class="item-image">
+					<img src="assets/images/puppy7.jpg" /></div>
+					<div class="item-text">
+						<div class="item-title">
+					American Bully STUD</div>
+							<div class="item-hr"></div>
+								<div class="item-price">$750</div>
+									<div class="item-info">
+									(San Jose) general - by owner</div>
+					</div></div></a>
+
+			<a href="">
+				<div class="item-box">
+					<div class="item-image">
+					<img src="assets/images/puppy8.jpg" /></div>
+					<div class="item-text">
+						<div class="item-title">
+					FULL CHIHUAHUAS Puppies</div>
+							<div class="item-hr"></div>
+								<div class="item-price">$50</div>
+									<div class="item-info">
+									(fairfield / vacaville) farm & garden - by owner</div>
+					</div></div></a>					
+</div>	
+
+
+</div>			
+	<div class="clear"></div>
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="foo-item">© Craiglist 2013 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+		<div class="foo-item"><a href="">Help</a></div>
+		<div class="foo-item"><a href="">Terms</a></div>
+		<div class="foo-item"><a href="">Privacy</a></div>
+		<div class="foo-item"><a href="">Safety</a></div>
+		<div class="foo-item"><a href="">Feedback</a></div>
+		<div class="foo-item"><a href="">About</a></div>
+		<div class="foo-item"><a href="">CL Jobs</a></div>
+	</div>
+	<div class="clear"></div>
+		
+</body>
+</html>

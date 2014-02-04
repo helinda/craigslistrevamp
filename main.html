@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Craigslist - Item View</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="assets/mainstyle.css" />
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){ 
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'What are you looking for?'){
+				submitbutton.value = '';
+			}
+		});
+	}
+}
+</script>
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<div id="navbar">
+		<div id="loginbar">
+			<div id="loginitemswrapper">
+				<div class="loginitem"><a href="#">log-in</a></div>
+				<div class="loginitem"><a href="#">register</a></div>
+			</div>
+		</div>
+		<div id="navbar-contentcontainer">
+		<div id="navbar-content">
+			<div id="cl-logo">
+				<a href=""><img src="assets/craigslist-logotype.jpg"></a>
+			</div>
+			<div id="nav">
+				<div class="nav-item">
+					<form id="tfnewsearch" method="get" action="/search">
+		        		<input type="text" id="tfq" class="tftextinput" name="q" size="21" maxlength="120" value="What are you looking for?"><input type="submit" value="search" class="tfbutton">
+					</form>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- Categories -->
+	<div id="content">
+		<div id="gridwrapper">
+			<div class="row">
+				<div class="column">
+					<div class="element">
+						<a href=""><div class="element-img"><img src="assets/icon-community.gif" /></div>
+						<div class="element-text">Community</div></a>
+					</div>
+					<div class="element">
+						<a href=""><div class="element-img"><img src="assets/icon-personals.gif" /></div>
+						<div class="element-text">Personals</div></a>
+					</div>
+					<div class="element">
+						<a href=""><div class="element-img"><img src="assets/icon-forums.gif" /></div>
+						<div class="element-text">Forums</div></a>
+					</div>
+				</div>
+				<div class="column">
+					<div class="element">
+						<a href=""><div class="element-img"><img src="assets/icon-housing.gif" /></div>
+						<div class="element-text">Housing</div></a>
+					</div>
+					<div class="element">
+						<a href=""><div class="element-img"><img src="assets/icon-forsale.gif" /></div>
+						<div class="element-text">For Sale</div></a>
+					</div>
+					<div class="element">
+						<a href=""><div class="element-img"><img src="assets/icon-services.gif" /></div>
+						<div class="element-text">Services</div></a>
+					</div>
+				</div>
+				<div class="column">
+					<div class="element">
+						<a href=""><div class="element-img"><img src="assets/icon-jobs.gif" /></div>
+						<div class="element-text">Jobs</div></a>
+					</div>
+					<div class="element">
+						<a href=""><div class="element-img"><img src="assets/icon-gigs.gif" /></div>
+						<div class="element-text">Gigs</div></a>
+					</div>
+					<div class="element">
+						<a href=""><div class="element-img"><img src="assets/icon-resumes.gif" /></div>
+						<div class="element-text">Resumes</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Categories 
+	<div id="content">
+		<div id="gridwrapper">
+			<div class="row">
+				<div class="column">
+					<div class="element"><a id="community" href="#"><img src="assets/community-icon.png" /><br><div class="element-text">community</div></a></div>
+
+					<div class="element"><a href="#"><img src="assets/personals-icon.png" /><br><div class="element-text">personals</div></a></div>
+
+					<div class="element"><a href="#"><img src="assets/forums-icon.png" /><br><div class="element-text">forums</div></a></div>
+				</div>
+				<div class="column">
+					<div class="element"><a href="#"><img src="assets/housing-icon.png" /><br><div class="element-text">housing</div></a></div>
+
+					<div class="element"><a href="#"><img src="assets/forsale-icon.png" /><br><div class="element-text">for sale</div></a></div>
+
+					<div class="element"><a href="#"><img src="assets/services-icon.png" /><br><div class="element-text">services</div></a></div>
+				</div>
+				<div class="column">
+					<div class="element"><a href="#"><img src="assets/jobs-icon.png" /><br><div class="element-text">jobs</div></a></div>
+
+					<div class="element"><a href="#"><img src="assets/gigs-icon.png" /><br><div class="element-text">gigs</div></a></div>
+
+					<div class="element"><a href="#"><img src="assets/resumes-icon.png" /><br><div class="element-text">resumes</div></a></div>
+
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="clear"></div>
+	<!-- Footer -->
+	<div id="footer">
+		<div class="foo-item">© Craiglist 2013 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+		<div class="foo-item"><a href="">Help</a></div>
+		<div class="foo-item"><a href="">Terms</a></div>
+		<div class="foo-item"><a href="">Privacy</a></div>
+		<div class="foo-item"><a href="">Safety</a></div>
+		<div class="foo-item"><a href="">Feedback</a></div>
+		<div class="foo-item"><a href="">About</a></div>
+		<div class="foo-item"><a href="">CL Jobs</a></div>
+	</div>
+	<div class="clear"></div>
+</body>
+</html>
+

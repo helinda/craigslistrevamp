@@ -1,0 +1,179 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#loginbar {	
+	position: absolute;
+	width: 100%;
+	background-color: #3b4046;
+	text-align: left;
+	height: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size:12px;
+	color: #ebeced;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#loginbar a, #loginbar a:link, #loginbar a:visited {
+	color: #ebeced;	
+	text-decoration: none;
+}
+#loginbar a:hover {
+	color: #ffffff;
+}
+
+
+#loginitemswrapper {
+	float:right;	
+}
+
+.loginitem {
+	display: inline;
+	width: 60px;
+	float:left;
+}
+
+
+
+
+#upperhalf {
+	 position: absolute;
+	 left: 0px;
+	 right: 0px;
+	 top: 0px;
+	 background-color: #ebeced;
+	 height: 290px;
+}
+
+#mainlogocontainer {
+	margin-top: 130px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 100px;
+	width: 450px;
+}
+
+
+#bottomhalf {
+	position: absolute;
+	margin-top: 325px;
+	width:  100%;
+	padding-bottom:20px;
+}
+
+#nav {
+	/*display: block;*/
+	font color: #808080;
+   	padding-top: 30px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Search Bar (from textfixer.com) */
+.maintextinput{
+	text-align: center;
+	margin: 5px;
+	width: 600px;
+	height: 30px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:20px;
+	font-weight: 100;
+   	color: #939393;
+	border: none;
+	background: #ebeced;
+	border-radius: 5px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+}
+#searcharea {
+	margin-bottom: 30px;
+}
+.mainsearchbutton {
+	padding: 15px 30px 15px 30px;
+	margin-left: 70px;
+	margin-right: auto;
+	width: 150px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border: none;
+	background: #e38a39;
+	border-radius: 7px 7px;
+}
+.mainsearchbutton:hover {
+	text-decoration: none;
+	background: #d27420;
+}
+/* Fixes submit button height problem in Firefox */
+.tfbutton::-moz-focus-inner {
+	border: 0;
+}
+
+
+/* Footer */
+/*#footer-container {
+	min-height: 100%;
+	margin-bottom: -330px;
+	position: relative;
+}
+#footer {
+	background: #ebeced;
+	font-size: 12px;
+	color: #939393;
+	text-align: center;
+	padding: 10px 0px;
+}
+.foo-item {
+	display: inline;
+	margin: 0px 16px;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#footer a:hover {
+	color: #000;
+}
+#footer a{
+	text-decoration:none;
+	color: #939393;
+}*/
+
+/* Footer */
+#footer {
+	margin-top: -20px;
+	position: absolute;
+	bottom: 0px;
+	height: 20px;
+	background: #ebeced;
+	font-size: 12px;
+	color: #939393;
+	text-align: center;
+	padding: 10px 0px;
+	width: 100%
+}
+.foo-item {
+	display: inline;
+	margin: 0px 16px;
+}
+#footer a, #footer a:link, #footer a:visited {
+	color: #939393;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #000;
+}
+
+.clear {
+clear:both;
+}
+

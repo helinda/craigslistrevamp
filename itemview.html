@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Craigslist - Item View</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="assets/style.css" />
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){ 
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'What are you looking for?'){
+				submitbutton.value = '';
+			}
+		});
+	}
+}
+</script>
+</head>
+<body>
+	<!-- Navigation Bar -->
+<!--	<div id="navbar">
+		<div id="navbar-content">
+			<div id="cl-logo">
+				<a href=""><img src="assets/images/craigslist-logotype.jpg"></a>
+			</div>
+			<div id="nav">
+				<div class="nav-item">
+					<form id="tfnewsearch" method="get" action="/search">
+		        		<input type="text" id="tfq" class="tftextinput" name="q" size="21" maxlength="120" value="What are you looking for?"><input type="submit" value="search" class="tfbutton">
+					</form>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>-->
+
+	<div id="navbar">
+		<div id="loginbar">
+			<div id="loginitemswrapper">
+				<div class="loginitem"><a href="#">log-in</a></div>
+				<div class="loginitem"><a href="#">register</a></div>
+			</div>
+		</div>
+		<div id="navbar-contentcontainer">
+		<div id="navbar-content">
+			<div id="cl-logo">
+				<a href=""><img src="assets/craigslist-logotype.jpg"></a>
+			</div>
+			<div id="nav">
+				<div class="nav-item">
+					<form id="tfnewsearch" method="get" action="/search">
+		        		<input type="text" id="tfq" class="tftextinput" name="q" size="21" maxlength="120" value="What are you looking for?"><input type="submit" value="search" class="tfbutton">
+					</form>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<!-- Item View -->
+	<div id="content">
+		<div id="container">
+			<div class="post-title">Chocolate Labrador Puppies - $700 (Berkeley North/Hills)</div>
+			<div class="post-subtitle">
+				Posted: 2013-10-24, 2:17PM PST, 
+				Last Updated: 2013-10-25, 6:07PM PST
+			</div>
+			<!-- Left Column -->
+			<div id="left-column">
+				<div class="post-img"><img src="assets/images/pups.jpg"></div>
+				<div class="post-desc">Chocolate pups. Not meant for cooking. Please give these little buggers a home! Application required. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			</div>
+			<!-- Right Column -->
+			<div id="right-column">
+				<div class="post-buy">
+					<div class="post-map"><img src="assets/images/map.jpg"></div>
+					<div class="post-contact"><a href="" class="post-contacta">Contact</a></div>
+					<div class="post-nonos">* It is NOT ok to contact this poster with services or other commercial interests.</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<!-- Warning -->
+			<div id="warning">
+				<a href=""><b>Avoid scams, deal locally!</b></a> Do NOT wire funds (Western Union, Moneygram).<br>Beware cashier checks, money orders, shipping, non-local buyers/sellers. <a href="">More info.</a>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<!-- Footer -->
+	<div id="footer">
+		<div class="foo-item">© Craiglist 2013 &nbsp; &nbsp; &nbsp; &nbsp;</div>
+		<div class="foo-item"><a href="">Help</a></div>
+		<div class="foo-item"><a href="">Terms</a></div>
+		<div class="foo-item"><a href="">Privacy</a></div>
+		<div class="foo-item"><a href="">Safety</a></div>
+		<div class="foo-item"><a href="">Feedback</a></div>
+		<div class="foo-item"><a href="">About</a></div>
+		<div class="foo-item"><a href="">CL Jobs</a></div>
+	</div>
+	<div class="clear"></div>
+</body>
+</html>
